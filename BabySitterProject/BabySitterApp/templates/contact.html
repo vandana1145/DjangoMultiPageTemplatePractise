@@ -1,0 +1,21 @@
+{% extends 'home.html' %}
+
+{% load static %}
+
+{% block title %} Parents {% endblock title %}
+
+	<!--script-for-menu-->
+	{% static 'css/menuScript.js' %}
+	<!--script-for-menu-->
+
+{% block content %}
+
+    {% include 'components/nav.html' %}
+	<div class="banner-1">		
+	</div>
+	<!--contact-->
+	{% include 'components/contactContent.html' %}
+	<!--contact-->
+	
+{% endblock content %}
+

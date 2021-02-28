@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>{% block title %}{% endblock title %}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
+<link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' />
+<link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet">
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<link href="{% static 'css/animate.css' %}" rel="stylesheet" type="text/css" media="all">
+<script src="{% static 'js/wow.min.js' %}"></script>
+	<script>
+		new WOW().init();
+	</script>
+</head>
+<body>
+	<!--header-top-->
+	{% include 'components/header.html' %}
+	<!--header-top-->
+
+    {% block content %}
+    {% endblock content %}
+
+	<!--footer-starts-->
+	{% include 'components/footer.html' %}
+	<!--footer-end-->
+</body>
+</html>
